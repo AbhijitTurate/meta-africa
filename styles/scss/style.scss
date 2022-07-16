@@ -44,9 +44,13 @@ html {
     align-items: center;
     // background-color: rgba(0,0,0,0.5);;
     height: 100vh;
-    background-image: url('../../../assets/images/background.JPG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+     url('../../../assets/images/background.JPG');
     background-repeat: no-repeat;
     background-size: cover;
+    @include smallDevices{
+        background-image: url('../../../assets/images/heroimg.png');
+    }
     // width: 100%;
 }
 
@@ -70,10 +74,13 @@ html {
     // font-size: 2rem;
     // text-align: center;
     // padding: 2rem;
+    margin-left: 3.5rem;
     justify-content: center;
     align-items: center;
     width: 8rem;
-
+    @include smallDevices{
+        margin-left: 1rem;
+    }
 }
 
 .logo h1 {
@@ -181,7 +188,7 @@ html {
     font-family: raleway,sans-serif;
 }
 .info_content{
-    color: whitesmoke;
+    color: $primary-font-color;
     font-weight: bold;
     font-size: 3rem;
     max-width: 90ch;
