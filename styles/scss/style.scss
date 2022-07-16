@@ -190,7 +190,7 @@ html {
 .info_content{
     color: $primary-font-color;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: clamp(1rem,4vh,3rem);
     max-width: 90ch;
     @include smallDevices{
         font-size: 2rem;
@@ -208,6 +208,58 @@ html {
     color: $sports;
 }
 
+
+video{
+    min-width: 100%;
+    
+    @include smallDevices{
+        min-height: 70vh;
+        object-fit: cover;
+    }
+    // z-index: 0;
+    // position:absolute;
+}
+.video_container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    // z-index: 0;
+}
+
+.content{
+    height: 100%;
+    width: fit-content;
+    margin: 0rem 5rem;
+    position:absolute;
+    text-align: center;
+    // top:50%;
+    // z-index:999;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+   
+    // padding: 0rem 5rem;
+    // @include smallDevices{
+    //     padding: 0rem 2rem;
+    // }
+}
+.content p{
+   
+    max-width: 80ch;
+    // min-height: 100vh;
+    // background-color: $primary-bg-color;
+    color: $primary-font-color;
+    font-size: clamp(1rem,3.5vh,3rem);
+    font-weight: bold;
+    @include smallDevices{
+        // position: relative;
+        // font-size: 2rem;
+    }
+}
+
 hr {
 
     border: 0.1rem solid $secondary-font-color;
@@ -222,6 +274,57 @@ hr {
     color: $secondary-font-color;
     transform: scale(1.1);
 }
+
+footer .fa-brands {
+    font-size: 3rem;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    background-color: $primary-bg-color;
+    align-items: center;
+    @include flex-set(row);
+    justify-content: space-around;
+    padding: 2.5rem;
+    @include smallDevices{
+       
+            @include flex-set(column, 1rem);
+            padding: 1.5rem;
+            text-align: center;
+        
+    }
+}
+
+.footer p {
+    color: $primary-font-color;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.socialmedia_icons {
+    list-style: none;
+    @include flex-set(row, 1.5rem);
+    justify-content: center;
+}
+
+.socialmedia_icon {
+    color: $secondary-font-color;
+}
+
+.fa-brands {
+    color: $primary-font-color;
+    font-size: 4rem;
+}
+
+.fa-brands:hover {
+    color: $secondary-font-color;
+    transform: scale(1.1);
+}
+
 
 // media screen
 @media (max-width: 690px) {
