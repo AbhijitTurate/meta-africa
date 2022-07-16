@@ -8,11 +8,217 @@ html {
   font-size: 10px;
 }
 
-herohome {
+.header {
+  align-items: center;
   height: 100vh;
-  width: 100%;
   background-image: url("../../../assets/images/background.JPG");
   background-repeat: no-repeat;
   background-size: cover;
-  color: aquamarine;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* place-content: center; */
+}
+
+.mobile_nav {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+}
+
+.logo h1 {
+  color: #66FCF1;
+}
+
+.logo h1:hover {
+  color: #D1E8E2;
+  cursor: pointer;
+}
+
+.logo img {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.hamburger {
+  margin-right: 2rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 690px) {
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    top: 0;
+  }
+}
+
+.bar {
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: 0.5rem auto;
+  background-color: #FCFCFC;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.navLinks :last-child {
+  margin-right: 2rem;
+}
+
+.navItem {
+  list-style: none;
+  color: #66FCF1;
+}
+
+.navItem:hover {
+  transform: scale(1.1);
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #66FCF1;
+}
+
+.navLink .cta {
+  color: #66FCF1;
+}
+
+.navLink .cta:hover {
+  color: #D1E8E2;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  top: 50%;
+  height: 80vh;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 0rem 5rem;
+}
+@media (max-width: 690px) {
+  .intro {
+    padding: 0rem 2rem;
+  }
+}
+
+.heading_line {
+  font-size: clamp(3rem, 6vw, 7rem);
+  font-weight: bolder;
+  font-family: raleway, sans-serif;
+}
+
+.info_content {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 3rem;
+  max-width: 90ch;
+}
+@media (max-width: 690px) {
+  .info_content {
+    font-size: 2rem;
+  }
+}
+
+.meta {
+  color: #f1c54e;
+}
+
+.africa {
+  color: #ff6600;
+}
+
+.sports {
+  color: #cd2524;
+}
+
+hr {
+  border: 0.1rem solid #66FCF1;
+}
+
+.fa-brands {
+  color: #D1E8E2;
+  font-size: 4rem;
+}
+
+.fa-brands:hover {
+  color: #66FCF1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 690px) {
+  .mobile_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+  .navLinks {
+    display: none;
+  }
+  .navLinks :last-child {
+    margin-right: 0rem;
+  }
+  .navBar.click {
+    flex-direction: column;
+  }
+  .header.click {
+    background-color: black;
+    background-image: none;
+    z-index: 999;
+  }
+  .bar2.click {
+    opacity: 0;
+  }
+  .bar1.click {
+    transform: translateY(0.8rem) rotate(45deg);
+  }
+  .bar3.click {
+    transform: translateY(-0.8rem) rotate(-45deg);
+  }
+  .navLinks.click {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    padding-bottom: 10vh;
+  }
 }/*# sourceMappingURL=style.css.map */
