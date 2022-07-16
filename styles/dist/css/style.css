@@ -11,9 +11,14 @@ html {
 .header {
   align-items: center;
   height: 100vh;
-  background-image: url("../../../assets/images/background.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/images/background.JPG");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 690px) {
+  .header {
+    background-image: url("../../../assets/images/heroimg.png");
+  }
 }
 
 .navBar {
@@ -36,17 +41,23 @@ html {
 }
 
 .logo {
+  margin-left: 3.5rem;
   justify-content: center;
   align-items: center;
   width: 8rem;
 }
+@media (max-width: 690px) {
+  .logo {
+    margin-left: 1rem;
+  }
+}
 
 .logo h1 {
-  color: #66FCF1;
+  color: #ff6600;
 }
 
 .logo h1:hover {
-  color: #D1E8E2;
+  color: #ffddbf;
   cursor: pointer;
 }
 
@@ -92,7 +103,7 @@ html {
 
 .navItem {
   list-style: none;
-  color: #66FCF1;
+  color: #ff6600;
 }
 
 .navItem:hover {
@@ -104,15 +115,15 @@ html {
 }
 
 .navLink:hover {
-  color: #66FCF1;
+  color: #ff6600;
 }
 
 .navLink .cta {
-  color: #66FCF1;
+  color: #ff6600;
 }
 
 .navLink .cta:hover {
-  color: #D1E8E2;
+  color: #ffddbf;
 }
 
 .intro {
@@ -139,7 +150,7 @@ html {
 }
 
 .info_content {
-  color: whitesmoke;
+  color: #ffddbf;
   font-weight: bold;
   font-size: 3rem;
   max-width: 90ch;
@@ -163,16 +174,16 @@ html {
 }
 
 hr {
-  border: 0.1rem solid #66FCF1;
+  border: 0.1rem solid #ff6600;
 }
 
 .fa-brands {
-  color: #D1E8E2;
+  color: #ffddbf;
   font-size: 4rem;
 }
 
 .fa-brands:hover {
-  color: #66FCF1;
+  color: #ff6600;
   transform: scale(1.1);
 }
 
