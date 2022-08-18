@@ -313,7 +313,7 @@ hr {
     @include mediumDevices{
         @include flex-set(column,3rem);
         padding:6rem 3rem;
-        height: 80vh;
+        height: 125vh;
     }
 }
 
@@ -387,7 +387,7 @@ hr {
     @include mediumDevices{
         @include flex-set(column-reverse,3rem);
         padding:6rem 3rem;
-        height: 80vh;
+        height: 125vh;
     }
 }
 .fa-brands {
