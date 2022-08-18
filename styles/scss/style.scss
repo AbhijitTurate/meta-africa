@@ -15,14 +15,14 @@ html {
     // scroll-snap-type: y mandatory;
 }
 
-.scroll-container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-}
+// .scroll-container{
+//     scroll-snap-type: y mandatory;
+//     overflow-y: scroll;
+// }
 
-.scroll-area{
-    scroll-snap-align: start;
-}
+// .scroll-area{
+//     scroll-snap-align: start;
+// }
 
 // main {
 //     @include flex-set(column);
@@ -302,7 +302,7 @@ hr {
     align-items: center;
     text-align: center;
     height: 100vh;
-    min-width: 100%;
+    width: 100%;
     padding:10rem 6rem;
     // background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     //  url("../../../assets/images/IMG_1112.webp");
@@ -313,6 +313,7 @@ hr {
     @include mediumDevices{
         @include flex-set(column,3rem);
         padding:6rem 3rem;
+        height: 125vh;
     }
 }
 
@@ -386,6 +387,7 @@ hr {
     @include mediumDevices{
         @include flex-set(column-reverse,3rem);
         padding:6rem 3rem;
+        height: 125vh;
     }
 }
 .fa-brands {

@@ -8,16 +8,6 @@ html {
   font-size: 10px;
 }
 
-.scroll-container {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
-
-.scroll-area {
-  scroll-snap-align: start;
-}
-
 .header {
   align-items: center;
   height: 100vh;
@@ -252,7 +242,7 @@ hr {
   align-items: center;
   text-align: center;
   height: 100vh;
-  min-width: 100%;
+  width: 100%;
   padding: 10rem 6rem;
   background-color: #101211;
 }
@@ -262,6 +252,7 @@ hr {
     flex-direction: column;
     gap: 3rem;
     padding: 6rem 3rem;
+    height: 125vh;
   }
 }
 
@@ -342,6 +333,7 @@ hr {
     flex-direction: column-reverse;
     gap: 3rem;
     padding: 6rem 3rem;
+    height: 125vh;
   }
 }
 
