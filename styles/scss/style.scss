@@ -198,7 +198,7 @@ html {
     font-weight: bolder;
     // font-style: italic;
     // color: $optional-font-color;
-    font-family: raleway,sans-serif;
+    // font-family: raleway,sans-serif;
 }
 .info_content{
     color: $primary-font-color;
@@ -224,6 +224,7 @@ html {
 .meta,
 .africa,
 .sports{
+    word-spacing: 2rem;
     color: $secondary-font-color;
 }
 
@@ -283,7 +284,10 @@ video{
     font-weight: bold;
     padding-bottom: 40rem;
     word-spacing: 3rem;
-  
+    // color: tan;
+    // font-weight: 1000;
+
+    mix-blend-mode: difference;
     @include smallDevices{
         // position: relative;
         // font-size: 2rem;
@@ -323,7 +327,7 @@ hr {
     font-weight: bolder;
     font-family: raleway, sans-serif;
     @include smallDevices{
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -358,7 +362,7 @@ hr {
     font-weight: bold;
     @include smallDevices{
       line-height: 3rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 .aboutImage{

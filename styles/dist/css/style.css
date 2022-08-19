@@ -156,7 +156,6 @@ html {
 .heading_line {
   font-size: clamp(3rem, 6vw, 7rem);
   font-weight: bolder;
-  font-family: raleway, sans-serif;
 }
 
 .info_content {
@@ -174,6 +173,7 @@ html {
 .meta,
 .africa,
 .sports {
+  word-spacing: 2rem;
   color: #ff6600;
 }
 
@@ -233,6 +233,7 @@ video {
   font-weight: bold;
   padding-bottom: 40rem;
   word-spacing: 3rem;
+  mix-blend-mode: difference;
 }
 @media (max-width: 690px) {
   .content p {
@@ -273,7 +274,7 @@ hr {
 }
 @media (max-width: 690px) {
   .aboutHeading {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -310,7 +311,7 @@ hr {
 @media (max-width: 690px) {
   .aboutDescription {
     line-height: 3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
