@@ -375,7 +375,7 @@ hr {
     max-width: 50%;
     flex: 1;
     @include mediumDevices{
-        min-height: 60%;
+        min-width:-webkit-fill-available;
     }
 }
 
