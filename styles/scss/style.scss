@@ -15,14 +15,14 @@ html {
     // scroll-snap-type: y mandatory;
 }
 
-.scroll-container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-}
+// .scroll-container{
+//     scroll-snap-type: y mandatory;
+//     overflow-y: scroll;
+// }
 
-.scroll-area{
-    scroll-snap-align: start;
-}
+// .scroll-area{
+//     scroll-snap-align: start;
+// }
 
 // main {
 //     @include flex-set(column);
@@ -198,7 +198,7 @@ html {
     font-weight: bolder;
     // font-style: italic;
     // color: $optional-font-color;
-    // font-family: raleway,sans-serif;
+    font-family: Georgia, serif;;
 }
 .info_content{
     color: $primary-font-color;
@@ -305,7 +305,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     min-width: 100%;
     padding:10rem 6rem;
     // background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -379,7 +379,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     min-width: 100%;
     padding:10rem 6rem;
     // background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
