@@ -167,6 +167,13 @@ html {
   word-spacing: 2rem;
   color: #ff6600;
 }
+@media (max-width: 690px) {
+  .meta,
+.africa,
+.sports {
+    word-spacing: 1rem;
+  }
+}
 
 video {
   min-width: 100%;
@@ -228,6 +235,7 @@ video {
 }
 @media (max-width: 690px) {
   .content p {
+    word-spacing: 1rem;
     font-size: clamp(3rem, 4vh, 10rem);
   }
 }
@@ -254,6 +262,7 @@ hr {
     flex-direction: column;
     gap: 3rem;
     padding: 6rem 3rem;
+    height: web;
   }
 }
 

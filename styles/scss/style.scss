@@ -198,7 +198,8 @@ html {
     font-weight: bolder;
     // font-style: italic;
     // color: $optional-font-color;
-    font-family: Georgia, serif;;
+    font-family: Georgia, serif;
+   
 }
 .info_content{
     color: $primary-font-color;
@@ -226,6 +227,9 @@ html {
 .sports{
     word-spacing: 2rem;
     color: $secondary-font-color;
+    @include smallDevices{
+        word-spacing: 1rem;
+    }
 }
 
 video{
@@ -291,6 +295,7 @@ video{
     @include smallDevices{
         // position: relative;
         // font-size: 2rem;
+        word-spacing: 1rem;
         font-size: clamp(3rem,4vh,10rem);;
     }
 }
@@ -317,6 +322,7 @@ hr {
     @include mediumDevices{
         @include flex-set(column,3rem);
         padding:6rem 3rem;
+        height:web;
     }
 }
 
