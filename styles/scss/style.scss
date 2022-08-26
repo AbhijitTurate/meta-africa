@@ -295,6 +295,7 @@ video{
     @include smallDevices{
         // position: relative;
         // font-size: 2rem;
+        padding-bottom: 20rem;
         word-spacing: 1rem;
         font-size: clamp(3rem,4vh,10rem);;
     }
@@ -310,7 +311,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100%;
+    min-height: 100vh;
     min-width: 100%;
     padding:10rem 6rem;
     // background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -322,7 +323,7 @@ hr {
     @include mediumDevices{
         @include flex-set(column,3rem);
         padding:6rem 3rem;
-        height:web;
+        
     }
 }
 
@@ -385,7 +386,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
     min-width: 100%;
     padding:10rem 6rem;
     // background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
