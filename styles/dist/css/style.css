@@ -322,6 +322,7 @@ hr {
 @media (max-width: 991.98px) {
   .aboutImage {
     min-width: 45vh;
+    max-height: 40vh;
   }
 }
 
