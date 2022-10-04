@@ -18,5 +18,5 @@
 3. Add more updated content into the web page.
 4. Create more tabs to access more related content/ links.
 ## Author
-- Abhijeet Turate
+- Abhijit Turate
 
