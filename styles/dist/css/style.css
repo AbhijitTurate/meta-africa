@@ -6,6 +6,7 @@
 
 html {
   font-size: 10px;
+  font-family: sans-serif;
 }
 
 .header {
@@ -27,8 +28,8 @@ html {
   gap: 0;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
-  /* place-content: center; */
+  height:70px;
+  box-shadow: 1px 6px 15px -6px #647696;
 }
 
 .mobile_nav {
@@ -98,7 +99,7 @@ html {
 }
 
 .navLinks :last-child {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .navItem {
@@ -145,15 +146,16 @@ html {
 
 .heading_line {
   font-size: clamp(3rem, 6vw, 7rem);
-  font-weight: bolder;
+  font-weight: 600;
   font-family: Georgia, serif;
 }
 
 .info_content {
   color: whitesmoke;
-  font-weight: bold;
+  font-weight: 400;
   font-size: clamp(3rem, 6vh, 6rem);
   max-width: 90ch;
+  /* line-height:45px; */
 }
 @media (max-width: 690px) {
   .info_content {
@@ -269,7 +271,7 @@ hr {
 .aboutHeading {
   color: #ff6600;
   font-size: clamp(1rem, 6vw, 5rem);
-  font-weight: bolder;
+  font-weight: 500;
   font-family: raleway, sans-serif;
 }
 @media (max-width: 690px) {
@@ -372,8 +374,9 @@ footer .fa-brands {
   display: flex;
   flex-direction: row;
   gap: 0;
-  justify-content: space-around;
-  padding: 2.5rem;
+  justify-content: space-between;
+  padding: 2.5rem 40px;
+  box-shadow:1px 6px 15px -6px #647696;
 }
 @media (max-width: 690px) {
   .footer {
@@ -386,16 +389,16 @@ footer .fa-brands {
 }
 
 .footer p {
-  color: whitesmoke;
+  color: #647696;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 20px;
 }
 
 .socialmedia_icons {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 30px;
   justify-content: center;
 }
 
@@ -459,3 +462,7 @@ footer .fa-brands {
     padding-bottom: 10vh;
   }
 }/*# sourceMappingURL=style.css.map */
+.features{
+  background: #101211;
+  
+}
