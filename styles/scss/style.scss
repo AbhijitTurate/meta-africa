@@ -522,6 +522,7 @@ footer .fa-brands {
         z-index: 999;
     }
 
+    
     .logo.click {
         // display: none;
     }
@@ -543,6 +544,10 @@ footer .fa-brands {
         height: 90vh;
         width: 100%;
         padding-bottom: 10vh;
+    }
+
+    .intro.click{
+        display: none;
     }
    
 }
